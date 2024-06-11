@@ -1,0 +1,25 @@
+
+*{
+background-color: black ;
+}
+
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;   
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 0.5s ease;
+    cursor: url(img/cursor.png), auto ;
+}
+
+section img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(150%);
+}
